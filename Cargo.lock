@@ -482,7 +482,7 @@ dependencies = [
  "paste",
  "pin-project",
  "quick-xml 0.31.0",
- "rand 0.8.7",
+ "rand 0.8.8",
  "reqwest 0.12.28",
  "rustc_version",
  "serde",
@@ -1292,7 +1292,7 @@ dependencies = [
  "infer 0.19.0",
  "jmap_proto",
  "libc",
- "lz4_flex 0.13.1",
+ "lz4_flex 0.14.0",
  "mail-auth",
  "mail-builder",
  "mail-parser",
@@ -2309,7 +2309,7 @@ dependencies = [
  "mail-builder",
  "mail-parser",
  "nlp",
- "rand 0.8.7",
+ "rand 0.10.2",
  "rasn",
  "rasn-cms",
  "rasn-pkix",
@@ -3096,9 +3096,9 @@ dependencies = [
 
 [[package]]
 name = "hickory-resolver"
-version = "0.26.1"
+version = "0.26.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f0d58d28879ceecde6607729660c2667a081ccdc082e082675042793960f178c"
+checksum = "0e4f9f4603319422d482738f3f6fe5aac03157fdbfed1cd85a3ff45adb09072f"
 dependencies = [
  "cfg-if",
  "futures-util",
@@ -3427,7 +3427,7 @@ dependencies = [
  "libc",
  "percent-encoding",
  "pin-project-lite",
- "socket2 0.6.5",
+ "socket2 0.5.10",
  "tokio",
  "tower-service",
  "tracing",
@@ -3611,7 +3611,7 @@ dependencies = [
  "md5",
  "nlp",
  "parking_lot",
- "rand 0.9.5",
+ "rand 0.10.2",
  "registry",
  "rustls",
  "rustls-pemfile",
@@ -3860,14 +3860,14 @@ dependencies = [
  "hyper-util",
  "jmap-tools",
  "jmap_proto",
- "lz4_flex 0.13.1",
+ "lz4_flex 0.14.0",
  "mail-auth",
  "mail-builder",
  "mail-parser",
  "nlp",
  "p256",
  "pkcs8",
- "rand 0.9.5",
+ "rand 0.10.2",
  "registry",
  "reqwest 0.13.4",
  "rkyv",
@@ -4039,7 +4039,7 @@ dependencies = [
  "p256",
  "p384",
  "pem",
- "rand 0.8.7",
+ "rand 0.8.8",
  "rsa",
  "serde",
  "serde_json",
@@ -4362,9 +4362,9 @@ dependencies = [
 
 [[package]]
 name = "lz4_flex"
-version = "0.13.1"
+version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7ef0d4ed8669f8f8826eb00dc878084aa8f253506c4fd5e8f58f5bce72ddb97e"
+checksum = "ecbdfe44b1bd960b68170b417450a628c43f7cf56bb3c5317e61cb230ee7f226"
 dependencies = [
  "twox-hash 2.1.3",
 ]
@@ -4393,7 +4393,7 @@ dependencies = [
  "mail-builder",
  "mail-parser",
  "quick-xml 0.41.0",
- "rand 0.8.7",
+ "rand 0.8.8",
  "rkyv",
  "rsa",
  "rustls-pki-types",
@@ -4576,7 +4576,7 @@ dependencies = [
  "directory",
  "email",
  "futures",
- "lz4_flex 0.13.1",
+ "lz4_flex 0.14.0",
  "nlp",
  "num_cpus",
  "proc_macros",
@@ -4837,7 +4837,7 @@ dependencies = [
  "nohash",
  "parking_lot",
  "psl",
- "rand 0.9.5",
+ "rand 0.10.2",
  "rkyv",
  "rust-stemmers",
  "serde",
@@ -4946,7 +4946,7 @@ dependencies = [
  "num-integer",
  "num-iter",
  "num-traits",
- "rand 0.8.7",
+ "rand 0.8.8",
  "smallvec",
  "zeroize",
 ]
@@ -5148,8 +5148,8 @@ dependencies = [
 
 [[package]]
 name = "opentelemetry"
-version = "0.31.0"
-source = "git+https://github.com/stalwartlabs/opentelemetry-rust#274b4d324794280ce6f4def095a3428197a9e6e3"
+version = "0.33.0"
+source = "git+https://github.com/stalwartlabs/opentelemetry-rust#ae66e97b140f70e477ab710686aafce665cc2f8b"
 dependencies = [
  "futures-core",
  "futures-sink",
@@ -5161,8 +5161,8 @@ dependencies = [
 
 [[package]]
 name = "opentelemetry-http"
-version = "0.31.0"
-source = "git+https://github.com/stalwartlabs/opentelemetry-rust#274b4d324794280ce6f4def095a3428197a9e6e3"
+version = "0.33.0"
+source = "git+https://github.com/stalwartlabs/opentelemetry-rust#ae66e97b140f70e477ab710686aafce665cc2f8b"
 dependencies = [
  "async-trait",
  "bytes",
@@ -5173,10 +5173,11 @@ dependencies = [
 
 [[package]]
 name = "opentelemetry-otlp"
-version = "0.31.0"
-source = "git+https://github.com/stalwartlabs/opentelemetry-rust#274b4d324794280ce6f4def095a3428197a9e6e3"
+version = "0.33.0"
+source = "git+https://github.com/stalwartlabs/opentelemetry-rust#ae66e97b140f70e477ab710686aafce665cc2f8b"
 dependencies = [
  "http 1.4.2",
+ "httpdate",
  "opentelemetry",
  "opentelemetry-http",
  "opentelemetry-proto",
@@ -5191,8 +5192,8 @@ dependencies = [
 
 [[package]]
 name = "opentelemetry-proto"
-version = "0.31.0"
-source = "git+https://github.com/stalwartlabs/opentelemetry-rust#274b4d324794280ce6f4def095a3428197a9e6e3"
+version = "0.33.0"
+source = "git+https://github.com/stalwartlabs/opentelemetry-rust#ae66e97b140f70e477ab710686aafce665cc2f8b"
 dependencies = [
  "opentelemetry",
  "opentelemetry_sdk",
@@ -5203,13 +5204,13 @@ dependencies = [
 
 [[package]]
 name = "opentelemetry-semantic-conventions"
-version = "0.31.0"
-source = "git+https://github.com/stalwartlabs/opentelemetry-rust#274b4d324794280ce6f4def095a3428197a9e6e3"
+version = "0.33.0"
+source = "git+https://github.com/stalwartlabs/opentelemetry-rust#ae66e97b140f70e477ab710686aafce665cc2f8b"
 
 [[package]]
 name = "opentelemetry_sdk"
-version = "0.31.0"
-source = "git+https://github.com/stalwartlabs/opentelemetry-rust#274b4d324794280ce6f4def095a3428197a9e6e3"
+version = "0.33.0"
+source = "git+https://github.com/stalwartlabs/opentelemetry-rust#ae66e97b140f70e477ab710686aafce665cc2f8b"
 dependencies = [
  "futures-channel",
  "futures-executor",
@@ -5849,7 +5850,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b570b25f7617e43d59005d0990ccb79e950a423952cea19671b7a876da390adf"
 dependencies = [
  "anyhow",
- "itertools 0.14.0",
+ "itertools 0.13.0",
  "proc-macro2",
  "quote",
  "syn 2.0.119",
@@ -5925,7 +5926,7 @@ dependencies = [
  "byteorder",
  "hmac 0.10.1",
  "md-5 0.9.1",
- "rand 0.8.7",
+ "rand 0.8.8",
  "sha-1",
  "sha2 0.9.9",
 ]
@@ -5994,7 +5995,7 @@ dependencies = [
  "quinn-udp",
  "rustc-hash",
  "rustls",
- "socket2 0.6.5",
+ "socket2 0.5.10",
  "thiserror 2.0.19",
  "tokio",
  "tracing",
@@ -6035,7 +6036,7 @@ dependencies = [
  "cfg_aliases",
  "libc",
  "once_cell",
- "socket2 0.6.5",
+ "socket2 0.5.10",
  "tracing",
  "windows-sys 0.61.2",
 ]
@@ -6108,9 +6109,9 @@ dependencies = [
 
 [[package]]
 name = "rand"
-version = "0.8.7"
+version = "0.8.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "22f6172bdec972074665ed81ed53b71da00bfc44b65a753cfde883ec4c702a1a"
+checksum = "e058c7de0b26af77780c769414d6257830bb240f3c38477dbc2c16e5f54d6d4c"
 dependencies = [
  "libc",
  "rand_chacha 0.3.1",
@@ -6458,7 +6459,7 @@ dependencies = [
  "ahash",
  "hashify",
  "jmap-tools",
- "lz4_flex 0.13.1",
+ "lz4_flex 0.14.0",
  "mail-auth",
  "serde",
  "serde_json",
@@ -7085,7 +7086,7 @@ dependencies = [
  "aes-gcm",
  "anyhow",
  "argon2",
- "base64 0.22.1",
+ "base64 0.21.7",
  "block-padding 0.3.3",
  "blowfish 0.9.1",
  "buffered-reader",
@@ -7132,7 +7133,7 @@ dependencies = [
  "sha2 0.10.9",
  "sha3 0.10.9",
  "slh-dsa",
- "thiserror 2.0.19",
+ "thiserror 1.0.69",
  "twofish",
  "typenum",
  "x25519-dalek",
@@ -7659,7 +7660,7 @@ dependencies = [
  "nlp",
  "num_cpus",
  "parking_lot",
- "rand 0.9.5",
+ "rand 0.10.2",
  "rayon",
  "regex",
  "registry",
@@ -7910,7 +7911,7 @@ dependencies = [
  "futures",
  "gethostname",
  "lru-cache",
- "lz4_flex 0.13.1",
+ "lz4_flex 0.14.0",
  "memchr",
  "mysql_async",
  "nlp",
@@ -7918,7 +7919,7 @@ dependencies = [
  "parking_lot",
  "r2d2",
  "radsort",
- "rand 0.9.5",
+ "rand 0.10.2",
  "rayon",
  "redis",
  "regex",
@@ -8472,7 +8473,7 @@ dependencies = [
  "futures-sink",
  "http 1.4.2",
  "httparse",
- "rand 0.8.7",
+ "rand 0.8.8",
  "rustls-pki-types",
  "tokio",
  "tokio-rustls",
@@ -8829,7 +8830,7 @@ dependencies = [
  "humantime",
  "lazy_static",
  "log",
- "rand 0.8.7",
+ "rand 0.8.8",
  "serde",
  "spin 0.10.1",
 ]
@@ -9022,7 +9023,7 @@ dependencies = [
  "privdrop",
  "psl",
  "quick_cache",
- "rand 0.9.5",
+ "rand 0.10.2",
  "rcgen",
  "regex",
  "reqwest 0.13.4",
@@ -9752,7 +9753,7 @@ dependencies = [
  "once_cell",
  "petgraph",
  "phf 0.13.1",
- "rand 0.8.7",
+ "rand 0.8.8",
  "rustc_version",
  "serde",
  "serde_json",
@@ -9856,7 +9857,7 @@ checksum = "44b80a042fc71419fc4952a90c9cbcfb323c0ced048125d8b44fd362f184045f"
 dependencies = [
  "aes 0.8.4",
  "hmac 0.12.1",
- "rand 0.8.7",
+ "rand 0.8.8",
  "rand_chacha 0.3.1",
  "sha3 0.10.9",
  "zenoh-result",
@@ -9871,7 +9872,7 @@ dependencies = [
  "getrandom 0.2.17",
  "hashbrown 0.16.1",
  "keyed-set",
- "rand 0.8.7",
+ "rand 0.8.8",
  "schemars 1.2.1",
  "serde",
  "token-cell",
@@ -10073,7 +10074,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "eeab45020bbecc077f14f06ee8f5aee65ce760af72481e663cac58b5dbfa66dd"
 dependencies = [
  "const_format",
- "rand 0.8.7",
+ "rand 0.8.8",
  "serde",
  "uhlc",
  "zenoh-buffers",
@@ -10147,7 +10148,7 @@ dependencies = [
  "futures",
  "lazy_static",
  "lz4_flex 0.10.0",
- "rand 0.8.7",
+ "rand 0.8.8",
  "ringbuffer-spsc",
  "rsa",
  "serde",
